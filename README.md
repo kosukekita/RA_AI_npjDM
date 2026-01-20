@@ -3,7 +3,7 @@
 This repository contains the source code for the study: **"AI-Driven Treatment Recommendations for Rheumatoid Arthritis"** (submitted to npj Digital Medicine).
 
 This code reproduces the machine learning pipeline, including:
-1.  **Model Training**: Training a CatBoost model to predict treatment response (CDAI remission).
+1.  **Model Training**: Training a CatBoost model to predict treatment response (CDAI ≤ 10, Low Disease Activity).
 2.  **Treatment Recommendation**: An algorithm that combines ML predictions with clinical safety constraints (Rule-Based Filtering).
 3.  **Statistical Analysis**: Propensity Score Matching (PSM) to evaluate the clinical utility of the recommendations.
 4.  **Explainability**: SHAP analysis to interpret model decisions.

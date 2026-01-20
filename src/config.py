@@ -17,7 +17,11 @@ RESULT_DIR = "results"
 
 # --- Column Names ---
 # Define the column names used in your dataset
-COL_OUTCOME = 'CDAI_outcome'  # Binary outcome (1: Responder, 0: Non-Responder)
+COL_OUTCOME = 'CDAI_outcome'  # Binary outcome (1: Responder if 6-month CDAI ≤ 10, 0: Non-Responder)
+
+# --- Treatment Response Threshold ---
+# Responder is defined as achieving Low Disease Activity (LDA) at 6 months: CDAI ≤ 10
+TH_CDAI_RESPONSE = 10
 COL_HP_CODE = 'hp_code'       # Hospital code for splitting train/test
 COL_PT_ID = 'PT_ID'           # Patient ID
 
